@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>猩ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      Nu_Link.dll V3.07
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+C:\Users\pw0000\Downloads\2021_微處理機系統與介面技術\installation\NUC100_120BSP_v3.00.002\NUC100_120BSPv3.00.002\SampleCode\StdDriver\I2C_Master\KEIL\I2C_Master.uvproj
+Project File Date:  09/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'I2C_Master'
+assembling startup_NUC100Series.s...
+creating preprocessor file for system_NUC100Series.c...
+creating preprocessor file for main.c...
+creating preprocessor file for retarget.c...
+compiling system_NUC100Series.c...
+creating preprocessor file for clk.c...
+compiling main.c...
+..\main.c(178): warning:  #940-D: missing return statement at end of non-void function "I2C_Write" 
+  }
+..\main.c(127): warning:  #177-D: variable "byteData"  was declared but never referenced
+  		uint8_t byteData;
+..\main.c(216): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		scanf("%d",&register_address);
+..\main.c(218): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		scanf("%d",&value);
+..\main.c(223): warning:  #111-D: statement is unreachable
+      I2C0_Close();
+..\main.c: 5 warnings, 0 errors
+creating preprocessor file for i2c.c...
+compiling retarget.c...
+creating preprocessor file for sys.c...
+compiling clk.c...
+compiling i2c.c...
+creating preprocessor file for uart.c...
+compiling sys.c...
+compiling uart.c...
+linking...
+Program Size: Code=5728 RO-data=392 RW-data=56 ZI-data=1024  
+After Build - User command #1: fromelf --bin ".\obj\I2C_Master.axf" --output ".\obj\I2C_Master.bin"
+After Build - User command #2: fromelf --text -c ".\obj\I2C_Master.axf" --output ".\obj\I2C_Master.txt"
+".\obj\I2C_Master.axf" - 0 Error(s), 5 Warning(s).
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
